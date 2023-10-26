@@ -11,7 +11,7 @@ const LogController_1 = require("./controllers/LogController");
 require('dotenv').config();
 const app = (0, express_1.default)();
 const port = process.env.PORT || 8080;
-app.use((0, cors_1.default)({ allowedHeaders: 'Content-Type, Cache-Control', origin: '*' }));
+app.use((0, cors_1.default)({ origin: '*' }));
 app.use(body_parser_1.default.json());
 app.use(express_1.default.static('public'));
 app.use(express_1.default.json());

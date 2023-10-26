@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 8080;
 
-app.use(cors({ allowedHeaders: 'Content-Type, Cache-Control', origin: '*' }));
+app.use(cors({ origin: '*' }));
 app.use(bodyParser.json());
 
 app.use(express.static('public'));
